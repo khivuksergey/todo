@@ -53,6 +53,7 @@
   border: none;
   display: inline-block;
   cursor: pointer;
+  outline: none;
 }
 .delete{
   height: auto;
