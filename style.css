@@ -1,0 +1,123 @@
+.todoContainer{
+    width: 100%;
+    background-color: #f5f5f5;
+    animation: todoHoverBack 0.05s ease-in-out 0s forwards;
+}
+.todoContainer:hover{
+    background-color: #f9f9f9;
+    animation: todoHover 0.05s ease-in-out 0s forwards;
+}
+
+.todo{
+    padding: 10px;
+    font-family: Roboto;
+    font-size: 26px;
+    text-align: center;
+    margin: 10px;
+}
+.newtext{
+    height: auto;
+    font-family: Roboto;
+    font-size: 26px;
+    text-align: center;
+    width: 90%;
+    outline: none;
+    background: none;
+    border: none;
+    resize: none;
+    color: #aaa;
+
+}
+.header1{
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.workplace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    min-width: 200px;
+}
+.list{
+    width: auto;
+    padding-top: 10px;
+    display: flex;
+    height: auto;
+}
+.btn{
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.delete{
+  height: auto;
+  background-color: #efefef;
+  width: 1rem;
+}
+.delete:hover{
+  animation: deleteHover 0.15s ease-in-out 0s forwards;
+  background-color: #f15353;
+}
+.edit{
+  height: auto;
+  background-color: #efefef;
+  width: 1rem;
+}
+.edit:hover{
+  animation: editHover 0.15s ease-in-out 0s forwards;
+  background-color: #ffbc53;
+}
+.save{
+  height: 100%;
+  background-color: #efefef;
+  width: 1rem;
+}
+.save:hover{
+  animation: saveHover 0.15s ease-in-out 0s forwards;
+  background-color: #7ae77a;
+}
+.new{
+  margin-top: 10px;
+  height: 2rem;
+  width: 100%;
+  background-color: #fafafa;
+  animation: newHoverBack 0.1s ease-in-out 0s forwards;
+}
+.new:hover{
+  animation: newHover 0.1s ease-in-out 0s forwards;
+  background-color: #b4cae1;
+}
+
+@keyframes newHover{
+  0%{background-color: #fafafa};
+  100%{background-color: #b4cae1;}
+}
+@keyframes newHoverBack{
+  0%{background-color: #b4cae1};
+  100%{background-color: #fafafa;}
+}
+@keyframes todoHover{
+  0%{background-color: #f5f5f5};
+  100%{background-color: #f9f9f9;}
+}
+@keyframes todoHoverBack{
+  0%{background-color: #f9f9f9};
+  100%{background-color: #f5f5f5;}
+}
+@keyframes editHover{
+  0%{background-color: #efefef};
+  100%{background-color: #ffbc53;}
+}
+@keyframes deleteHover{
+  0%{background-color: #efefef};
+  100%{background-color: #f15353;}
+}
+@keyframes saveHover{
+  0%{background-color: #efefef};
+  100%{background-color: #7ae77a;}
+}
